@@ -1,0 +1,79 @@
+
+.animate{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(17, 17, 17, 0.87);
+  opacity: o;
+  
+  transition: 0.6s;
+  transform: scale(0.9);
+  position: fixed;
+    width: 100%;
+    top: 0;
+   visibility:hidden ;
+    z-index: 1000;
+}
+.opened{
+   opacity: 1;
+   visibility: visible;
+   transform: scale(1);
+}
+
+/* .animate {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(17, 17, 17, 0.87);
+    opacity: 0;
+    transform: scale(0);
+    animation: animate 0.8s forwards;
+    animation-delay: 1s; /* Add a 1 second delay */
+    /* position: fixed;
+    width: 100%;
+    top: 0;
+} */
+/* 
+@keyframes animate {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}  */
+button{
+    background-color: #FF6F61;
+    
+}
+.cross{
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    width: 30px;
+    height: 30px;
+    background-color: rgb(243, 243, 243);
+    border-radius: 50%;
+    line-height: 25px;
+    text-align: center;
+    font-size: 18px;
+    transition: 0.5s;
+}
+.cross:hover{
+    transform: rotate(180deg);
+}
+form input{
+    outline: none;
+    border: none;
+    padding: 10px , 20px;
+}
+form button{
+    outline: none;
+    border: none;
+    padding: 10px , 20px;
+    
+}
